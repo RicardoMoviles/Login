@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         //Button listeners.
         findViewById(R.id.id_sign_in_button).setOnClickListener(this);
         findViewById(R.id.id_sign_out_button).setOnClickListener(this);
-        findViewById(R.id.bRegistro).setOnClickListener(this);
+
 
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -71,10 +71,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     @Override
     public void onClick(View v) {
-
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-
 
         switch (v.getId()){
             case R.id.id_sign_in_button:
