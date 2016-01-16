@@ -6,29 +6,29 @@ import java.net.PasswordAuthentication;
  * Created by Usuario on 12/01/2016.
  */
 public class Cliente {
-    private String nombre;
-    private String edad;
-    private String correo;
-    private String password;
+    private String Nombre;
+    private String Correo;
+    private String Contraseña;
 
+    public Cliente(){
 
-    public Cliente() {
+    }
 
+    public Cliente(String nombre, String correo, String contraseña) {
+        this.Nombre = nombre;
+        this.Correo = correo;
+        this.Contraseña = contraseña;
     }
 
     public String getNombre() {
-        return nombre;
-    }
-
-    public String getEdad() {
-        return edad;
+        return Nombre;
     }
 
     public String getCorreo() {
-        return correo;
+        return Correo;
     }
 
-    public String getPassword() {
-        return password;
+    public String getContraseña() {
+        return Contraseña;
     }
 }

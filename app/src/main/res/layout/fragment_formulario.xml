@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navajowhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos de Cuenta"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/eUsuario"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <EditText
+            android:id="@+id/eCorreo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp" />
+
+        <EditText
+            android:id="@+id/eContraseña"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:password="true" />
+
+        <EditText
+            android:id="@+id/eRepetir"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="repetir Contraseña"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:password="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ok" >
+        </Button>
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" >
+        </Button>
+    </LinearLayout>
+
+
+
+</LinearLayout>

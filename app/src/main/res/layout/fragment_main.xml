@@ -17,7 +17,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/principal">
+
         <TextView
             android:text="@string/signed_out"
             android:textColor="@color/black"
@@ -32,7 +35,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:id="@+id/lUser"
+            android:visibility="visible">
 
             <TextView
                 android:layout_width="67dp"
@@ -56,7 +61,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:id="@+id/lPassword"
+            android:visibility="visible">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,10 +87,17 @@
             android:layout_gravity="center">
 
             <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conectar"
+            android:id="@+id/bConectar" />
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Conectar"
-                android:id="@+id/bConectar" />
+                android:text="Desconectar"
+                android:id="@+id/bDesconectar"
+                android:visibility="gone"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -132,6 +146,11 @@
 
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contendorFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

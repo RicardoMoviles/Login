@@ -3,13 +3,11 @@ package com.restrepo.ricardo.login;
 
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.os.Bundle;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
@@ -24,10 +22,22 @@ import com.facebook.login.widget.LoginButton;
 import com.facebook.login.widget.ProfilePictureView;
 
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
+
+
+
+
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends Fragment {
+public class MainActivityFragment extends Fragment{
 
     private CallbackManager callbackManager;
     private TextView textView;
@@ -43,7 +53,6 @@ public class MainActivityFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getActivity().getApplicationContext());
-
 
 
         callbackManager = CallbackManager.Factory.create();
@@ -104,7 +113,8 @@ public class MainActivityFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
+
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
 
